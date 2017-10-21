@@ -29,7 +29,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"Ignore cursor keys
+" Ignore cursor keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
@@ -38,3 +38,21 @@ inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
+
+" charactor encode
+set fenc=utf-8
+
+" setting display
+set number
+set cursorline
+set cursorcolumn
+set virtualedit=onemore
+set smartindent
+set visualbell
+set laststatus=2
+
+" setting tab related
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
