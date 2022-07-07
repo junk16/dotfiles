@@ -7,7 +7,6 @@ ln -nfs ~/dotfiles/.gvimrc
 ln -nfs ~/dotfiles/.fzf.bash
 ln -nfs ~/dotfiles/.fzf.zsh
 ln -nfs ~/dotfiles/.tmux.conf
-ln -nfs ~/dotfiles/.zsh_history
 ln -nfs ~/dotfiles/.zshenv
 ln -nfs ~/dotfiles/.zshrc
 ```
