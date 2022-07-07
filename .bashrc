@@ -4,3 +4,6 @@ then
 else
   export PS1='\[\e[32m\][\h: \w]\n\[\e[0m\]\$ '
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+alias sed='gsed'
