@@ -1,4 +1,4 @@
-source "/usr/local/Cellar/anyenv/1.1.2/libexec/../completions/anyenv.zsh"
+source "/usr/local/Cellar/anyenv/1.1.4/libexec/../completions/anyenv.zsh"
 anyenv() {
   typeset command
   command="$1"
@@ -94,6 +94,10 @@ plenv() {
 }
 export PYENV_ROOT="/Users/jun.yamada/.anyenv/envs/pyenv"
 export PATH="/Users/jun.yamada/.anyenv/envs/pyenv/bin:$PATH"
+PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); for i in ${!paths[@]}; do if [[ ${paths[i]} == "'/Users/jun.yamada/.anyenv/envs/pyenv/shims'" ]]; then unset '\''paths[i]'\''; fi; done; echo "${paths[*]}"')"
+export PATH="/Users/jun.yamada/.anyenv/envs/pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); for i in ${!paths[@]}; do if [[ ${paths[i]} == "'/Users/jun.yamada/.anyenv/envs/pyenv/shims'" ]]; then unset '\''paths[i]'\''; fi; done; echo "${paths[*]}"')"
 export PATH="/Users/jun.yamada/.anyenv/envs/pyenv/shims:${PATH}"
 export PYENV_SHELL=zsh
 source '/Users/jun.yamada/.anyenv/envs/pyenv/libexec/../completions/pyenv.zsh'
@@ -106,9 +110,11 @@ pyenv() {
 
   case "$command" in
   rehash|shell)
-    eval "$(pyenv "sh-$command" "$@")";;
+    eval "$(pyenv "sh-$command" "$@")"
+    ;;
   *)
-    command pyenv "$command" "$@";;
+    command pyenv "$command" "$@"
+    ;;
   esac
 }
 export RBENV_ROOT="/Users/jun.yamada/.anyenv/envs/rbenv"
