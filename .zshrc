@@ -10,9 +10,6 @@ $ '
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# anyenv init - --no-rehash > ~/.anyenv-rc.sh
-[ -f ~/.anyenv-rc.sh ] && source ~/.anyenv-rc.sh
-
 alias grep='grep --color=auto'
 alias gt="go test -gcflags=-l"
 #autoload -U compinit; compinit
