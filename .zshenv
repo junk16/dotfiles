@@ -23,9 +23,17 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
-
+alias rbs="exec $SHELL -l"
 alias da='docker exec app'
 alias sed='gsed'
 
+# Git alias
+alias ggil='git grep -n'
+alias gg='(){ git grep -n $1 -- '\'':!*.log'\''}' 
+alias gr="git status | grep modified | sed -e 's/modified://g' |  xargs git checkout"
+alias gls="git ls-files"
+alias gfp="git fetch --prune"
+
 export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
 export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+
