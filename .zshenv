@@ -33,6 +33,7 @@ alias gg='(){ git grep -n $1 -- '\'':!*.log'\''}'
 alias gr="git status | grep modified | sed -e 's/modified://g' |  xargs git checkout"
 alias gls="git ls-files"
 alias gfp="git fetch --prune"
+alias gc="git checkout"
 
 export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
 export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
