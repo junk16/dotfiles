@@ -34,7 +34,23 @@ alias gr="git status | grep modified | sed -e 's/modified://g' |  xargs git chec
 alias gls="git ls-files"
 alias gfp="git fetch --prune"
 alias gc="git checkout"
+alias gs="git status"
+alias ggvi="_ggvi"
+_ggvi(){
+	local pattern="${1}"
+	gg "${pattern}" | awk '{print $1}' | sed -e 's/:[0-9]*://g' | sort | uniq | xargs -o vi
+}
 
 export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
 export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
+
+# kubectrl
+alias kgc='kubectl get pod -o jsonpath="{.spec.containers[*].name}"'
+alias kecb='_kecb'
+_kecb(){
+	local pod="${1}"
+	local contaier="${2}"
+
+	kubectl exec -it "${pod}" --container "${contaier}" -- /bin/bash
+}
