@@ -14,6 +14,8 @@ ln -nfs ~/dotfiles/.zshrc
 ln -nfs .config ~/.config
 ```
 
+and more ....
+
 ## anyenv
 ```
 anyenv init - --no-rehash > ~/.anyenv-rc.sh
