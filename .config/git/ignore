@@ -4,6 +4,7 @@ tags
 GTAGS
 GRTAGS
 GPATH
+HTML
 
 # Swap
 [._]*.s[a-v][a-z]

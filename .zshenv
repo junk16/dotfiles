@@ -40,6 +40,8 @@ _ggvi(){
 	local pattern="${1}"
 	gg "${pattern}" | awk '{print $1}' | sed -e 's/:[0-9]*://g' | sort | uniq | xargs -o vi
 }
+alias gam="git status | grep modified | sed 's/modified://g' | xargs git add"
+
 
 export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
 export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
@@ -52,5 +54,5 @@ _kecb(){
 	local pod="${1}"
 	local contaier="${2}"
 
-	kubectl exec -it "${pod}" --container "${contaier}" -- /bin/bash
+	kubectl exec -it "${pod}" --container "${contaier}" -- sh
 }
