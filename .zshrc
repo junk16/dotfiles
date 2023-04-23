@@ -16,6 +16,7 @@ PROMPT='%F{green}[%n:%~]%f ${vcs_info_msg_0_}
 $ '
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.zshrc_work ] && source ~/.zshrc_work
 
 alias grep='grep --color=auto'
 alias gt="go test -gcflags=-l"
@@ -26,11 +27,7 @@ export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 # gtags
 export GTAGSLABEL=pygments
 
-# ROC setting
-## stg
-alias roc-stgapp='roc login -cjpe2-zed2-stg -nlpd-keiba-app'
-alias roc-stgbo='roc login -cjpe2-zed2-stg -nlpd-keiba-backoffice'
-## prod
-alias roc-prodapp='roc login -cjpe2-zed2-prod -nlpd-keiba-app'
-alias roc-prodbo='roc login -cjpe2-zed2-prod -nlpd-keiba-backoffice'
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+
+
+

@@ -14,8 +14,19 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
+# Docker
+export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
+export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+
 # anyenv
 [ -f ~/.anyenv-rc.sh ] && source ~/.anyenv-rc.sh
+
+
+# ailas
+alias rbs="exec $SHELL -l"
+alias da='docker exec app'
+alias sed='gsed'
+alias rsp='rsync -a --info=progress2'
 
 # Go
 export GOPATH=$HOME/go
@@ -23,32 +34,35 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
-alias rbs="exec $SHELL -l"
-alias da='docker exec app'
-alias sed='gsed'
-
 # Git alias
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
 alias ggil='git grep -n'
 alias gg='(){ git grep -n $1 -- '\'':!*.log'\''}' 
 alias gr="git status | grep modified | sed -e 's/modified://g' |  xargs git checkout"
 alias gls="git ls-files"
 alias gfp="git fetch --prune"
-alias gc="git checkout"
+alias gck="git checkout"
 alias gs="git status"
+alias gb="git branch"
 alias ggvi="_ggvi"
 _ggvi(){
 	local pattern="${1}"
 	gg "${pattern}" | awk '{print $1}' | sed -e 's/:[0-9]*://g' | sort | uniq | xargs -o vi
 }
 alias gam="git status | grep modified | sed 's/modified://g' | xargs git add"
-
-
-export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
-export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+alias gtree="git log --graph --simplify-by-decoration --pretty=format:'%d' --all"
 
 
 # kubectrl
 alias kgc='kubectl get pod -o jsonpath="{.spec.containers[*].name}"'
+alias kgp='kubectl get pods'
+alias kec='_kec'
+_kec(){
+	local pod="${1}"
+	kubectl exec -it "${pod}" -- sh
+}
 alias kecb='_kecb'
 _kecb(){
 	local pod="${1}"
@@ -56,3 +70,31 @@ _kecb(){
 
 	kubectl exec -it "${pod}" --container "${contaier}" -- sh
 }
+
+
+# Docker
+alias dfr='docker ps -q | xargs -I{} docker rm -f {}'
+alias de='_de'
+_de(){
+	local image="${1}"
+	docker exec -it "${image}" /bin/bash
+}
+
+alias dr='_dr'
+_dr(){
+	local image="${1}"
+	docker run -itd "${image}"
+}
+
+# Docker Compose
+alias dcu='docker-compose up -d'
+alias dcp='docker-compose ps'
+alias dcd='docker-compose down'
+
+# ytdl
+alias yda='_yda'
+_yda(){
+	local url="${1}"
+	yt-dlp -f bestaudio -x ""${url}""
+}
+alias ydv='yt-dlp -f bestvideo+bestaudio'
