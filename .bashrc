@@ -7,3 +7,4 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 alias sed='gsed'
+. "$HOME/.cargo/env"

@@ -26,3 +26,4 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/jun.yamada/local/bin:$PATH"
 
 alias da='docker exec app'
+. "$HOME/.cargo/env"

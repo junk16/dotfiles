@@ -56,19 +56,22 @@ alias gtree="git log --graph --simplify-by-decoration --pretty=format:'%d' --all
 
 
 # kubectrl
+alias kgs='kubectl get service'
+alias kds='kubectl describe service'
 alias kgc='kubectl get pod -o jsonpath="{.spec.containers[*].name}"'
 alias kgp='kubectl get pods'
-alias kec='_kec'
-_kec(){
+alias kdp='kubectl describe pod'
+alias kex='_kex'
+_kex(){
 	local pod="${1}"
-	kubectl exec -it "${pod}" -- sh
+	kubectl exec -it "${pod}" -- bash
 }
-alias kecb='_kecb'
-_kecb(){
+alias kexc='_kexc'
+_kexc(){
 	local pod="${1}"
 	local contaier="${2}"
 
-	kubectl exec -it "${pod}" --container "${contaier}" -- sh
+	kubectl exec -it "${pod}" --container "${contaier}" -- bash
 }
 
 
@@ -95,6 +98,14 @@ alias dcd='docker-compose down'
 alias yda='_yda'
 _yda(){
 	local url="${1}"
-	yt-dlp -f bestaudio -x ""${url}""
+	yt-dlp -f bestaudio -x --audio-format m4a "${url}"
 }
-alias ydv='yt-dlp -f bestvideo+bestaudio'
+alias ydv='_ydv'
+_ydv(){
+	local url="${1}"
+	yt-dlp -f bestvideo+bestaudio --recode-video mp4 "${url}"
+	
+}
+
+alias grep='grep --color=auto'
+alias gt="go test -gcflags=-l"

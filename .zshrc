@@ -17,10 +17,7 @@ $ '
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc_work ] && source ~/.zshrc_work
-
-alias grep='grep --color=auto'
-alias gt="go test -gcflags=-l"
-
+[ -f  "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 #autoload -U compinit; compinit
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
