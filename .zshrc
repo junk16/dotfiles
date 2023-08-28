@@ -26,5 +26,6 @@ export GTAGSLABEL=pygments
 
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
-
-
+# Key-Binding
+bindkey ƒ forward-word
+bindkey ∫ backward-word
