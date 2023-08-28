@@ -23,6 +23,8 @@ export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
 
 # ailas
+alias vi="nvim"
+alias vim="nvim"
 alias rbs="exec $SHELL -l"
 alias da='docker exec app'
 alias sed='gsed'
