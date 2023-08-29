@@ -539,7 +539,7 @@
 				</dict>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -1136,7 +1136,7 @@
 				</dict>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>production</string>
 			<key>Non Ascii Font</key>
@@ -1733,7 +1733,7 @@
 				</dict>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>staging</string>
 			<key>Non Ascii Font</key>
@@ -2330,7 +2330,7 @@
 				</dict>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>slo</string>
 			<key>Non Ascii Font</key>
