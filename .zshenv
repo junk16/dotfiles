@@ -18,6 +18,7 @@ export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
 export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
 # anyenv
+# anyenv init - > ~/.anyenv-rc.sh
 [ -f ~/.anyenv-rc.sh ] && source ~/.anyenv-rc.sh
 
 
