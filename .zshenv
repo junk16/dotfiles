@@ -2,16 +2,10 @@
 export LANG=en_US.utf-8
 export LC_ALL=en_US.utf-8
 
-#alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
+alias brew="PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 export PATH=$HOME/bin:$PATH
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
-
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # Docker
 export DOCKER_HOST=unix:///${HOME}/.lima/docker/sock/docker.sock
@@ -25,6 +19,7 @@ export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 # ailas
 alias vi="nvim"
 alias vim="nvim"
+alias rsync="$(brew --prefix)/bin/rsync"
 alias rbs="exec $SHELL -l"
 alias da='docker exec app'
 alias sed='gsed'
