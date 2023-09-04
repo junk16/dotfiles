@@ -5,6 +5,7 @@ export LC_ALL=en_US.utf-8
 alias brew="PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 export PATH=$HOME/bin:$PATH
 export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/sbin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
 
 # Docker

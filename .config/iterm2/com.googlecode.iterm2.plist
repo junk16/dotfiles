@@ -4,6 +4,10 @@
 <dict>
 	<key>Default Bookmark Guid</key>
 	<string>0ACFA004-5CCF-4195-8FFA-36589403A876</string>
+	<key>DetectPasswordInput</key>
+	<true/>
+	<key>DisablePasswordManagerAnimations</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -582,6 +586,29 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>'s password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>\[sudo\] password for</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1179,6 +1206,29 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>'s password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>\[sudo\] password for</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1776,6 +1826,29 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>'s password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>\[sudo\] password for</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -2373,6 +2446,29 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>'s password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>\[sudo\] password for</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
