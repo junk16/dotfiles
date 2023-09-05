@@ -18,7 +18,8 @@ $ '
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc_work ] && source ~/.zshrc_work
 [ -f  "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
-#
+[ -d "$HOME/pdbin" ] && export PATH="$HOME/pdbin:$PATH"
+
 #autoload -U compinit; compinit
 #export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
