@@ -10,6 +10,9 @@ set fileencoding=utf-8
 " key setting
 set backspace=indent,eol,start
 
+" clipboard
+set clipboard+=unnamed
+
 " key mapping
 noremap <C-c> <Esc>
 inoremap <C-c> <Esc>

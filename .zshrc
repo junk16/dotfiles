@@ -15,6 +15,7 @@ $ '
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f  "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+[ -f ~/zsh4work/.zshrc_work ] && source ~/zsh4work/.zshrc_work
 
 # anyenv
 # anyenv init - > ~/.anyenv-rc.sh
@@ -27,7 +28,10 @@ export GTAGSLABEL=pygments
 # ailas
 alias vi="nvim"
 alias vim="nvim"
+
 alias rsync="$(brew --prefix)/bin/rsync"
+alias zcat="gzcat"
+alias zgrep="grep"
 alias rbs="exec $SHELL -l"
 alias da='docker exec app'
 alias sed='gsed'

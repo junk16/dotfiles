@@ -15,7 +15,7 @@ export DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
 
 # work
-[ -f ~/.zshenv_work ] && source ~/.zshenv_work
+[ -f ~/zsh4work/.zshenv_work ] && source ~/zsh4work/.zshenv_work
 
 # dev
 [ -d "$HOME/pdbin" ] && export PATH="$HOME/pdbin:$PATH"
