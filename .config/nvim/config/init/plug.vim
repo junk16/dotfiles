@@ -12,6 +12,8 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-scripts/taglist.vim'
 Plug 'lighttiger2505/gtags.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'rebelot/kanagawa.nvim'
 
 "" lsp setting
 Plug 'prabirshrestha/asyncomplete.vim'

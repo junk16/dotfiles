@@ -26,3 +26,5 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
+# Rust
+. "$HOME/.cargo/env"
