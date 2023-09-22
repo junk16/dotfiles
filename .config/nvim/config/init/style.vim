@@ -1,1 +1,1 @@
-colorscheme kanagawa-dragon
+ colorscheme hybrid
