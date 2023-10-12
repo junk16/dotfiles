@@ -67,7 +67,15 @@ alias kdp='kubectl describe pod'
 alias kex='_kex'
 _kex(){
 	local pod="${1}"
-	kubectl exec -it "${pod}" -- bash
+    local cmd="${2}"
+
+    if [[ -n "$cmd" ]]; then
+        :
+    else
+        cmd='bash'
+    fi
+
+	kubectl exec -it "${pod}" -- "$cmd"
 }
 alias kexc='_kexc'
 _kexc(){
