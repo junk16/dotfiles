@@ -28,3 +28,6 @@ export PATH="$GOPATH/bin:$PATH"
 
 # Rust
 . "$HOME/.cargo/env"
+
+# Yarn
+export PATH="$HOME/dotfiles/lsp_modules/node_modules/.bin:$PATH"

@@ -17,7 +17,7 @@
       "filetypes": ["typescript", "typescriptreact", "graphql"]
     },
     "sql": {
-      "module": "/path/to/node_modules/sql-language-server/dist/bin/cli.js",
+      "command": "sql-language-server",
       "args": ["up", "--method", "node-ipc"],
       "filetypes": ["sql", "mysql"]
     },
