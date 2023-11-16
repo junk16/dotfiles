@@ -11,6 +11,9 @@
     "coc-jedi": ">=0.36.1",
     "coc-solargraph": ">=1.2.4",
     "coc-rust-analyzer": ">=0.74.0",
-    "coc-phpls": ">=2.2.3"
+    "coc-phpls": ">=2.2.3",
+    "@yaegassy/coc-laravel": ">=0.7.17",
+    "@yaegassy/coc-ansible": ">=0.14.2",
+    "coc-psalm": ">=0.12.4"
   }
 }
