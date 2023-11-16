@@ -1,30 +1,5 @@
 syntax on
 
-filetype plugin indent on
-
-" charactor encode
-set fileencoding=utf-8
-
-" behaviour setting
-set hidden
-
-
-" setting display
-set number
-set cursorline
-"set cursorcolumn
-set guicursor=a:blinkwait700-blinkon400-blinkoff250
-set virtualedit=onemore
-set smartindent
-set visualbell
-set laststatus=2
-"set statusline=%F\ %y\ [%n]\ [%l:%c\|%L]%<
-set showcmd
-set showmode
-
-" key setting
-set backspace=indent,eol,start
-
 " key mapping
 noremap <C-c> <Esc>
 inoremap <C-c> <Esc>
@@ -62,11 +37,31 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>”
 
-" for grep setting
-set wildignore=node_modules/*,tags,GTAGS,GRTAGS,GPATH,build/**,.git/**
 
 " gtags.vim
 nnoremap <silent> <Space>f :Gtags -f %<CR>
 nnoremap <silent> <Space>j :GtagsCursor<CR>
 nnoremap <silent> <Space>d :<C-u>exe('Gtags '.expand('<cword>'))<CR>
 nnoremap <silent> <Space>r :<C-u>exe('Gtags -r '.expand('<cword>'))<CR>
+
+" QuickFix
+nnoremap Q q
+nnoremap <silent> qj  :cnext<Return>
+nnoremap <silent> qk  :cprevious<Return>
+nnoremap <silent> qr  :crewind<Return>
+nnoremap <silent> qK  :cfirst<Return>
+nnoremap <silent> qJ  :clast<Return>
+nnoremap <silent> qf  :cnfile<Return>
+nnoremap <silent> qF  :cpfile<Return>
+nnoremap <silent> ql  :clist<Return>
+nnoremap <silent> qq  :cc<Return>
+nnoremap <silent> qo  :copen<Return>
+nnoremap <silent> qc  :cclose<Return>
+nnoremap <silent> qw  :cwindow<Return>
+nnoremap <silent> qp  :colder<Return>
+nnoremap <silent> qn  :cnewer<Return>
+nnoremap <silent> qm  :make<Return>
+nnoremap <silent> qM  :make<Space>
+nnoremap <silent> qg  :grep<Space>
+nnoremap <silent> q   <Nop>
+
