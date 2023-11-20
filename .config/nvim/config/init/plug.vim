@@ -15,6 +15,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'stephpy/vim-yaml'
+Plug 'junk16/vim-gitgrep'
 
 """ lsp setting
 "Plug 'prabirshrestha/asyncomplete.vim'
