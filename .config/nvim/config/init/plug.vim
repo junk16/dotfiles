@@ -25,6 +25,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'kylechui/nvim-surround'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-git-status.vim'
+Plug 'roblillack/vim-bufferlist'
 
 """ lsp setting
 "Plug 'prabirshrestha/asyncomplete.vim'
