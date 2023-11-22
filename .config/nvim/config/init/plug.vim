@@ -1,8 +1,9 @@
 "vim-plug setting
 call plug#begin()
-Plug 'kien/ctrlp.vim'
-Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
+"Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-surround'
@@ -16,6 +17,14 @@ Plug 'chrisbra/csv.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'stephpy/vim-yaml'
 Plug 'junk16/vim-gitgrep'
+Plug 'sainnhe/everforest'
+Plug 'lewis6991/gitsigns.nvim' " for barbar.nvim
+Plug 'nvim-tree/nvim-web-devicons' " for barbar.nvim
+Plug 'romgrk/barbar.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'kylechui/nvim-surround'
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-git-status.vim'
 
 """ lsp setting
 "Plug 'prabirshrestha/asyncomplete.vim'
