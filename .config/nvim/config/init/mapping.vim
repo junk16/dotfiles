@@ -64,4 +64,3 @@ nnoremap <silent> qm  :make<Return>
 nnoremap <silent> qM  :make<Space>
 nnoremap <silent> qg  :grep<Space>
 nnoremap <silent> q   <Nop>
-
