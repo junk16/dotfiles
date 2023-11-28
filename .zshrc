@@ -109,12 +109,12 @@ alias dcd='docker-compose down'
 alias yda='_yda'
 _yda(){
 	local url="${1}"
-	yt-dlp -f bestaudio -x --audio-format m4a "${url}"
+	yt-dlp  --no-check-certificate -f bestaudio -x --audio-format m4a "${url}"
 }
 alias ydv='_ydv'
 _ydv(){
 	local url="${1}"
-	yt-dlp -f bestvideo+bestaudio --recode-video mp4 "${url}"
+	yt-dlp  --no-check-certificate -f bestvideo+bestaudio --recode-video mp4 "${url}"
 	
 }
 

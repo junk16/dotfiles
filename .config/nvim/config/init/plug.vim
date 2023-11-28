@@ -26,6 +26,7 @@ Plug 'kylechui/nvim-surround'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-git-status.vim'
 Plug 'roblillack/vim-bufferlist'
+Plug 'davidgranstrom/scnvim'
 
 """ lsp setting
 "Plug 'prabirshrestha/asyncomplete.vim'

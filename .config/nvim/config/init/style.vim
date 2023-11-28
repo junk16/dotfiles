@@ -1,4 +1,4 @@
-" colorscheme hybrid
+"colorscheme hybrid
 
 
  " Important!!
@@ -18,3 +18,18 @@ let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 
 colorscheme everforest
+
+" Highlight Zenkaku Space
+function! ZenkakuSpace()
+    highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
+endfunction
+   
+if has('syntax')
+    augroup ZenkakuSpace
+        autocmd!
+        autocmd ColorScheme       * call ZenkakuSpace()
+        autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+    augroup END
+    call ZenkakuSpace()
+endif
+
