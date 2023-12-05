@@ -11,7 +11,7 @@ hi CocErrorSign ctermfg=red  guibg=red
 hi CocErrorFloat ctermfg=white ctermbg=red
 hi CocInfoSign ctermfg=green 
 hi CocInfoFloat ctermfg=red ctermbg=blue
-hi CocWarningSign ctermfg=white ctermbg=yellow
+hi CocWarningSign ctermfg=DarkGrey ctermbg=yellow
 "
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved

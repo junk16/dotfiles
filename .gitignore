@@ -1,3 +1,5 @@
 .config/fish
+.config/coc/memos.json
 .config/coc/extensions
+.config/coc/extensions/package.json
 .config/coc/extensions/coc-json-data

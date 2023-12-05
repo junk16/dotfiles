@@ -1,12 +1,12 @@
-"colorscheme hybrid
+colorscheme hybrid
 
 
- " Important!!
-if has('termguicolors')
-  set termguicolors
-endif
-
-" For dark version.
+" " Important!!
+"if has('termguicolors')
+"  set termguicolors
+"endif
+"
+"" For dark version.
 set background=dark
 
 " Set contrast.
