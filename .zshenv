@@ -27,7 +27,7 @@ export PATH="$GOROOT/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
 # Rust
-. "$HOME/.cargo/env"
+[ -d  "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 # Yarn
 export PATH="$HOME/dotfiles/lsp_modules/node_modules/.bin:$PATH"
