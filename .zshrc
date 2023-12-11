@@ -60,7 +60,7 @@ alias gtree="git log --graph --simplify-by-decoration --pretty=format:'%d' --all
 
 # kubectrl
 alias kgs='kubectl get service'
-alias kds='kubectl describe service'
+alias kgd='kubectl get deployment'
 alias kgc='kubectl get pod -o jsonpath="{.spec.containers[*].name}"'
 alias kgp='kubectl get pods'
 alias kdp='kubectl describe pod'
@@ -85,6 +85,33 @@ _kexc(){
 	kubectl exec -it "${pod}" --container "${contaier}" -- bash
 }
 
+alias kds='_kds'
+_kds(){
+    local service="$1"
+    kubectrl describe service "$service"
+}
+alias kdd='_kdd'
+_kdd(){
+    local deployment="$1"
+    kubectl describe deploymenta "$deployment"
+}
+
+alias kdlp='_kdlp()'
+_kdlp(){
+    local pod="$1"
+    kubectrl delete pod --grace-period=0 --force "$pod"
+}
+
+alias kdld='_kdld'
+_kdld(){
+    local deployment="$1"
+    kubectl delete deployment "$deployment"
+}
+
+_kdls(){
+    local service="$1"
+    kubectl delete service "$service"
+}
 
 # Docker
 alias dfr='docker ps -q | xargs -I{} docker rm -f {}'
@@ -99,7 +126,6 @@ _dr(){
 	local image="${1}"
 	docker run -itd "${image}"
 }
-
 # Docker Compose
 alias dcu='docker-compose up -d'
 alias dcp='docker-compose ps'
@@ -120,3 +146,17 @@ _ydv(){
 
 alias grep='grep --color=auto'
 alias gt="go test -gcflags=-l"
+alias ctgas="$(brew --prefix)/bin/ctags"
+
+dmysql ()
+{
+    version_str="$1";
+    [[ -z $version_str ]] && version_str="latest";
+    version_int=$(echo $version_str | awk -F"[.-]" '{printf("%d%02d%02d\n", $1, $2, $3)}');
+    if [[ $version_str = "latest" || $version_int -ge 80022 ]]; then
+        repo="container-registry.oracle.com/mysql/community-server";
+    else
+        repo="mysql/mysql-server";
+    fi;
+    docker run -d -P -e MYSQL_ALLOW_EMPTY_PASSWORD=1 -e MYSQL_ROOT_PASSWORD="""" -e MYSQL_ROOT_HOST=""%"" $repo:$version_str
+}
