@@ -10,7 +10,7 @@ Plug 'davidgranstrom/scnvim'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'junk16/vim-gitgrep'
 Plug 'kylechui/nvim-surround'
 Plug 'lambdalisue/fern-git-status.vim'
