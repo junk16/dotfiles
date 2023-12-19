@@ -609,6 +609,16 @@
 					<true/>
 					<key>regex</key>
 					<string>\[sudo\] password for</string>
+        </dict>
+        <dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
