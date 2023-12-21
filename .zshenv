@@ -36,3 +36,6 @@ export PATH="$HOME/dotfiles/lsp_modules/node_modules/.bin:$PATH"
 # anyenv init - > ~/.anyenv-rc.sh
 [ -f ~/.anyenv-rc.sh ] && source ~/.anyenv-rc.sh;
 
+
+# PHP
+export PATH="$HOME/.composer/vendor/bin:$PATH"

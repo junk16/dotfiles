@@ -30,5 +30,9 @@
 
   "codeLens.enable": true,
   "solargraph.shell": "/bin/zsh",
-  "solargraph.useBundler": true
+  "solargraph.useBundler": true,
+  "phpls.path": "$(brew --prefix)/bin/intelephense",
+  "diagnostic-languageserver.filetypes": {
+    "php": ["${HOME}/.composer/vendor/bin/phpcs", "${HOME}/.composer/vendor/bin/phpstan"]
+  }
 }

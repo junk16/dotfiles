@@ -30,6 +30,7 @@ alias vi="nvim"
 alias vim="nvim"
 
 alias rsync="$(brew --prefix)/bin/rsync"
+alias grep="$(brew --prefix)/bin/ggrep"
 alias zcat="gzcat"
 alias zgrep="grep"
 alias rbs="exec $SHELL -l"
@@ -160,3 +161,5 @@ dmysql ()
     fi;
     docker run -d -P -e MYSQL_ALLOW_EMPTY_PASSWORD=1 -e MYSQL_ROOT_PASSWORD="""" -e MYSQL_ROOT_HOST=""%"" $repo:$version_str
 }
+export PATH="/opt/homebrew/opt/php@7.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.3/sbin:$PATH"
