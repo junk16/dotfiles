@@ -8,6 +8,7 @@ ln -nfs ~/dotfiles/.zshrc
 ln -nfs ~/dotfiles/.config 
 ln -nfs ~/dotfiles/.tmux
 ln -nfs ~/dotfiles/.ctags
+ln -nfs ~/dotfiles/.composer
 ```
 and more ....
 
