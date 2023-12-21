@@ -21,6 +21,7 @@ coc-git
 coc-go
 coc-golines
 coc-graphql
+coc-highlight
 coc-html
 coc-java
 coc-json
@@ -35,7 +36,6 @@ coc-phpls
 coc-php-cs-fixer
 coc-prettier
 coc-python
-coc-rls
 coc-rust-analyzer
 coc-sh
 coc-solargraph

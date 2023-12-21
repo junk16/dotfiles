@@ -31,3 +31,8 @@ export PATH="$GOPATH/bin:$PATH"
 
 # Yarn
 export PATH="$HOME/dotfiles/lsp_modules/node_modules/.bin:$PATH"
+
+# anyenv
+# anyenv init - > ~/.anyenv-rc.sh
+[ -f ~/.anyenv-rc.sh ] && source ~/.anyenv-rc.sh;
+

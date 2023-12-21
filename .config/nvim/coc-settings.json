@@ -26,5 +26,9 @@
       "args": ["-c", "./efm-langserver.yml"],
       "filetypes": ["vim", "eruby", "markdown"]
     }
-  }
+  },
+
+  "codeLens.enable": true,
+  "solargraph.shell": "/bin/zsh",
+  "solargraph.useBundler": true
 }

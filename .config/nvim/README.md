@@ -31,3 +31,9 @@ run
 ```
 :GoUpdateBinaries gopls
 ```
+
+### Rust
+
+```
+rustup component add rust-analyzer
+```
