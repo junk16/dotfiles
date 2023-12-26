@@ -94,7 +94,7 @@ _kds(){
 alias kdd='_kdd'
 _kdd(){
     local deployment="$1"
-    kubectl describe deploymenta "$deployment"
+    kubectl describe deployment "$deployment"
 }
 
 alias kdlp='_kdlp()'

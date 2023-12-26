@@ -34,5 +34,8 @@
   "phpls.path": "$(brew --prefix)/bin/intelephense",
   "diagnostic-languageserver.filetypes": {
     "php": ["${HOME}/.composer/vendor/bin/phpcs", "${HOME}/.composer/vendor/bin/phpstan"]
+  },
+  "yaml.schemas": {
+    "Kubernetes": "*.yaml"
   }
 }
