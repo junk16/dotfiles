@@ -1,8 +1,5 @@
-"" Disabled for maintenance
-" gtags
-"map <C-h> :Gtags -f %<CR>
-"map <C-j> :GtagsCursor<CR>
-"map <C-n> :cn<CR>
-"map <C-p> :cp<CR>
-
-
+map <C-g> :Gtags 
+map <C-i> :Gtags -f %<CR>
+map <C-j> :GtagsCursor<CR>
+map <C-n> :cn<CR>
+map <C-m> :cp<CR>

@@ -35,4 +35,8 @@ set backspace=indent,eol,start
 " for grep setting
 set wildignore=node_modules/*,tags,GTAGS,GRTAGS,GPATH,build/**,.git/**
 
+" leader
+let mapleader = "\<Space>"
 
+" change ctrl-p map
+let g:ctrlp_map = '<c-l>'
