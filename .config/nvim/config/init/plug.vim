@@ -29,6 +29,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/taglist.vim'
 Plug 'yegappan/taglist'
+Plug 'wenlongche/SrcExpl'
 
 """ lsp setting
 "Plug 'prabirshrestha/asyncomplete.vim'
