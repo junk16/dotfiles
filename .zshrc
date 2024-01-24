@@ -37,6 +37,8 @@ alias rbs="exec $SHELL -l"
 alias da='docker exec app'
 alias sed='gsed'
 alias rsp='rsync -a --info=progress2'
+alias grep='grep --color=auto'
+alias gt="go test -gcflags=-l"
 
 # Git alias
 alias ga='git add'
@@ -144,10 +146,6 @@ _ydv(){
 	yt-dlp  --no-check-certificate -f bestvideo+bestaudio --recode-video mp4 "${url}"
 	
 }
-
-alias grep='grep --color=auto'
-alias gt="go test -gcflags=-l"
-alias ctgas="$(brew --prefix)/bin/ctags"
 
 dmysql ()
 {

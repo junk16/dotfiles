@@ -1,12 +1,11 @@
 export LANG=en_US.utf-8
 export LC_ALL=en_US.utf-8
 
-
 export PATH=$HOME/bin:$PATH
 alias brew="PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
+alias ctags="PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin ctags"
 export PATH="$(brew --prefix)/bin:$PATH"
 export PATH="$(brew --prefix)/sbin:$PATH"
-
 export PATH="$HOME/.anyenv/bin:$PATH"
 
 # Docker
@@ -35,7 +34,6 @@ export PATH="$HOME/dotfiles/lsp_modules/node_modules/.bin:$PATH"
 # anyenv
 # anyenv init - > ~/.anyenv-rc.sh
 [ -f ~/.anyenv-rc.sh ] && source ~/.anyenv-rc.sh;
-
 
 # PHP
 export PATH="$HOME/.composer/vendor/bin:$PATH"

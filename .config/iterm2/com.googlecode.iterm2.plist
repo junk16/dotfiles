@@ -638,6 +638,29 @@
 					<key>regex</key>
 					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
 				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:</string>
+				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
@@ -1283,6 +1306,29 @@
 					<true/>
 					<key>regex</key>
 					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
@@ -1930,6 +1976,29 @@
 					<key>regex</key>
 					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
 				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:</string>
+				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
@@ -2575,6 +2644,29 @@
 					<true/>
 					<key>regex</key>
 					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:
+[sudo] password for juyamada:</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
