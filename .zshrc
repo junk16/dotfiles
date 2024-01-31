@@ -146,6 +146,13 @@ _ydv(){
 	yt-dlp  --no-check-certificate -f bestvideo+bestaudio --recode-video mp4 "${url}"
 	
 }
+alias ydawe='_ydawe'
+_ydawe(){
+	local url="${1}"
+    local type="${2}"
+	yt-dlp  --no-check-certificate -x --audio-format wav "${url}"
+}
+
 
 dmysql ()
 {

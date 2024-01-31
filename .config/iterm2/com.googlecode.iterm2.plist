@@ -636,7 +636,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
+					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign|rm)</string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -1305,7 +1305,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
+					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign|rm)</string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -1974,7 +1974,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
+					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign|rm)</string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -2643,7 +2643,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign)</string>
+					<string>(delete|deregister|detach|disable|disassociate|remove|revoke|stop|terminate|unassign|rm)</string>
 				</dict>
 				<dict>
 					<key>action</key>
