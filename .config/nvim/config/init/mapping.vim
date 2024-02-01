@@ -4,6 +4,8 @@ syntax on
 noremap <C-c> <Esc>
 inoremap <C-c> <Esc>
 inoremap <silent> jj <Esc>
+noremap <silent> wq :wq<CR>
+
 
 " ignore cursor key
 noremap <Up> <Nop>
