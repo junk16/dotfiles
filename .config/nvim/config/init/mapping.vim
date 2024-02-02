@@ -5,6 +5,7 @@ noremap <C-c> <Esc>
 inoremap <C-c> <Esc>
 inoremap <silent> jj <Esc>
 noremap <silent> wq :wq<CR>
+noremap <silent> ww :w<CR>
 
 
 " ignore cursor key
