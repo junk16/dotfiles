@@ -12,6 +12,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'junk16/vim-gitgrep'
+Plug 'kdheepak/lazygit.nvim'
 Plug 'kylechui/nvim-surround'
 Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/fern.vim'
