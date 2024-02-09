@@ -4,6 +4,7 @@ syntax on
 noremap <C-c> <Esc>
 inoremap <C-c> <Esc>
 inoremap <silent> jj <Esc>
+nnoremap <silent> <leader>qq :q!<CR>
 nnoremap <silent> <leader>q :wq<CR>
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
