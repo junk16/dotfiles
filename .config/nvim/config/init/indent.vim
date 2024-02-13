@@ -1,11 +1,11 @@
-set autoindent   
-set smartindent  
-set cindent      
-set smarttab     
-set expandtab    
+set autoindent
+set smartindent
+set cindent
+set smarttab
+set expandtab
 
-set tabstop=2    
-set shiftwidth=2 
+set tabstop=2
+set shiftwidth=2
 set softtabstop=0
 
 if has("autocmd")

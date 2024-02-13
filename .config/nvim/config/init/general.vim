@@ -40,3 +40,8 @@ let mapleader = "\<Space>"
 
 " change ctrl-p map
 let g:ctrlp_map = '<c-l>'
+
+" autocmd BufWritePre * :%s/\s\+$//ge
+"
+
+set list listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
