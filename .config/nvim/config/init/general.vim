@@ -38,8 +38,8 @@ set wildignore=node_modules/*,tags,GTAGS,GRTAGS,GPATH,build/**,.git/**
 " leader
 let mapleader = "\<Space>"
 
-" change ctrl-p map
-let g:ctrlp_map = '<c-l>'
+"" change ctrl-p map
+"let g:ctrlp_map = '<c-l>'
 
 " autocmd BufWritePre * :%s/\s\+$//ge
 "

@@ -48,23 +48,23 @@ nnoremap <silent> <Space>j :GtagsCursor<CR>
 nnoremap <silent> <Space>d :<C-u>exe('Gtags '.expand('<cword>'))<CR>
 nnoremap <silent> <Space>r :<C-u>exe('Gtags -r '.expand('<cword>'))<CR>
 
-" QuickFix
-nnoremap Q q
-nnoremap <silent> qj  :cnext<Return>
-nnoremap <silent> qk  :cprevious<Return>
-nnoremap <silent> qr  :crewind<Return>
-nnoremap <silent> qK  :cfirst<Return>
-nnoremap <silent> qJ  :clast<Return>
-nnoremap <silent> qf  :cnfile<Return>
-nnoremap <silent> qF  :cpfile<Return>
-nnoremap <silent> ql  :clist<Return>
-nnoremap <silent> qq  :cc<Return>
-nnoremap <silent> qo  :copen<Return>
-nnoremap <silent> qc  :cclose<Return>
-nnoremap <silent> qw  :cwindow<Return>
-nnoremap <silent> qp  :colder<Return>
-nnoremap <silent> qn  :cnewer<Return>
-nnoremap <silent> qm  :make<Return>
-nnoremap <silent> qM  :make<Space>
-nnoremap <silent> qg  :grep<Space>
-nnoremap <silent> q   <Nop>
+"" QuickFix
+"nnoremap Q q
+"nnoremap <silent> qj  :cnext<Return>
+"nnoremap <silent> qk  :cprevious<Return>
+"nnoremap <silent> qr  :crewind<Return>
+"nnoremap <silent> qK  :cfirst<Return>
+"nnoremap <silent> qJ  :clast<Return>
+"nnoremap <silent> qf  :cnfile<Return>
+"nnoremap <silent> qF  :cpfile<Return>
+"nnoremap <silent> ql  :clist<Return>
+"nnoremap <silent> qq  :cc<Return>
+"nnoremap <silent> qo  :copen<Return>
+"nnoremap <silent> qc  :cclose<Return>
+"nnoremap <silent> qw  :cwindow<Return>
+"nnoremap <silent> qp  :colder<Return>
+"nnoremap <silent> qn  :cnewer<Return>
+"nnoremap <silent> qm  :make<Return>
+"nnoremap <silent> qM  :make<Space>
+"nnoremap <silent> qg  :grep<Space>
+"nnoremap <silent> q   <Nop>
