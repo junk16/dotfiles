@@ -8,6 +8,7 @@ nnoremap <silent> <leader>qq :q!<CR>
 nnoremap <silent> <leader>q :wq<CR>
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
+nnoremap <silent> <leader>-- :setl number!<CR>
 
 " ignore cursor key
 noremap <Up> <Nop>
