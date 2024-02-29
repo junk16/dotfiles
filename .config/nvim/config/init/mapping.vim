@@ -1,14 +1,16 @@
 syntax on
 
 " key mapping
-noremap <C-c> <Esc>
-inoremap <C-c> <Esc>
+" noremap <C-c> <Esc>
+" inoremap <C-c> <Esc>
+noremap <M-q> <Esc>
+inoremap <M-q> <Esc>
 inoremap <silent> jj <Esc>
-nnoremap <silent> <leader>qq :q!<CR>
-nnoremap <silent> <leader>q :wq<CR>
-nnoremap <silent> <leader>w :w<CR>
-nnoremap <silent> <leader>gg :LazyGit<CR>
-nnoremap <silent> <leader>-- :setl number!<CR>
+noremap <silent> <leader>qq :q!<CR>
+noremap <silent> <leader>q :wq<CR>
+noremap <silent> <leader>w :w<CR>
+noremap <silent> <leader>gg :LazyGit<CR>
+noremap <silent> <leader>-- :setl number!<CR>
 
 " ignore cursor key
 noremap <Up> <Nop>

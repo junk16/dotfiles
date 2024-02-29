@@ -11,6 +11,8 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'junk16/vim-gitgrep'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'kylechui/nvim-surround'
