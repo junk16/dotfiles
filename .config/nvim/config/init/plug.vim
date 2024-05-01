@@ -22,6 +22,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'lewis6991/gitsigns.nvim' " for barbar.nvim
 Plug 'lighttiger2505/gtags.vim'
 Plug 'nvim-tree/nvim-web-devicons' " for barbar.nvim
+Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 Plug 'roblillack/vim-bufferlist'
 Plug 'romgrk/barbar.nvim'
 Plug 'rust-lang/rust.vim'
@@ -30,6 +31,7 @@ Plug 'stephpy/vim-yaml'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-jp/vimdoc-ja'
 Plug 'vim-scripts/taglist.vim'
 Plug 'yegappan/taglist'
 Plug 'wenlongche/SrcExpl'
