@@ -1,10 +1,3 @@
-au FileType yaml if bufname("%") =~# "docker-compose.yml" | set ft=yaml.docker-compose | endif
-au FileType yaml if bufname("%") =~# "compose.yml" | set ft=yaml.docker-compose | endif
-
-let g:coc_filetype_map = {
-  \ 'yaml.docker-compose': 'dockercompose',
-  \ }
-
 hi Pmenu ctermfg=black ctermbg=DarkGreen 
 hi PmenuSel ctermfg=white ctermbg=DarkGreen 
 hi CocErrorSign ctermfg=red  guibg=red
@@ -12,7 +5,24 @@ hi CocErrorFloat ctermfg=white ctermbg=red
 hi CocInfoSign ctermfg=green 
 hi CocInfoFloat ctermfg=red ctermbg=blue
 hi CocWarningSign ctermfg=DarkGrey ctermbg=yellow
-"
+
+let g:coc_filetype_map = {
+  \ 'yaml.docker-compose': 'dockercompose',
+  \ }
+
+" https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.vim
+
+" May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
+" utf-8 byte sequence
+set encoding=utf-8
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
+
+" Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
+" delays and poor user experience
+set updatetime=300
+
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
 set signcolumn=yes
@@ -162,6 +172,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
 
 " autocomplete
 inoremap <silent><expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-j>"
